@@ -438,7 +438,13 @@ body.lock {
   border: 1px solid #CECECE;
 }
 .form__item_date.active::after {
-  opacity: 0;
+  content: "";
+  width: 20px;
+  height: 80%;
+  padding: 0;
+  left: auto;
+  right: 1.5px;
+  border: 0;
 }
 .form__item_date-arrival::after {
   content: "Дата заезда";
@@ -772,7 +778,7 @@ body.lock {
 }
 @media (max-width: 992.98px) {
   .main-villa {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 55px);
     min-height: 615px;
   }
 }

@@ -769,7 +769,7 @@ body.lock {
 }
 @media (max-width: 992.98px) {
   .main-villa {
-    height: calc(100vh - 20px);
+    height: calc(100vh - 45px);
     min-height: 667px;
   }
 }

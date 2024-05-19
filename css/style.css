@@ -472,6 +472,7 @@ body.lock {
 }
 .form__input_date::-webkit-inner-spin-button, .form__input_date::-webkit-clear-button {
   z-index: -10;
+  display: none !important;
 }
 .form__input_date:not(.has-value) {
   font-size: 0;

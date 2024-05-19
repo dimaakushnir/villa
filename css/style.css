@@ -767,6 +767,12 @@ body.lock {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 992.98px) {
+  .main-villa {
+    height: calc(100vh - 20px);
+    min-height: 667px;
+  }
+}
 .slider-main-villa {
   position: relative;
   flex: 1 1 100%;

@@ -453,6 +453,7 @@ body.lock {
   color: #151515;
   border-radius: 6px;
   border: 1px solid #CECECE;
+  background-color: #FFFFFF;
 }
 .form__input_date {
   position: relative;
@@ -769,7 +770,7 @@ body.lock {
 }
 @media (max-width: 992.98px) {
   .main-villa {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     min-height: 615px;
   }
 }

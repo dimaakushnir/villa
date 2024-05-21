@@ -66,7 +66,7 @@
     </div>
 </header>
         <main class="villa">
-            <div class="villa__main main-villa">
+            <section class="villa__main main-villa">
                 <div class="main-villa__slider slider-main-villa">
                     <div class="slider-main-villa__swiper swiper">
                         <div class="slider-main-villa__wrapper swiper-wrapper">
@@ -157,34 +157,923 @@
                                         <input autocomplete='off' type='date' name='form[]'
                                             class='form__input form__input_date'>
                                     </div>
-                                    <button type='submit' class='form__btn'>Проверить наличие</button>
+                                    <button type='submit' class='form__btn btn'>Проверить наличие</button>
                                 </div>
                             </form>
                             <nav class="bottom-main-villa__menu menu-main-villa" data-da="mobile-header__body, 0, 992">
                                 <ul class="menu-main-villa__list">
                                     <li class="menu-main-villa__item">
-                                        <a href="" class="menu-main-villa__link">описание</a>
+                                        <a href="" class="menu-main-villa__link link-scroll"
+                                            data-scroll="about">описание</a>
                                     </li>
                                     <li class="menu-main-villa__item">
-                                        <a href="" class="menu-main-villa__link">планировка</a>
+                                        <a href="" class="menu-main-villa__link link-scroll"
+                                            data-scroll="layout">планировка</a>
                                     </li>
                                     <li class="menu-main-villa__item">
-                                        <a href="" class="menu-main-villa__link">стоимость</a>
+                                        <a href="" class="menu-main-villa__link link-scroll"
+                                            data-scroll="price">стоимость</a>
                                     </li>
                                     <li class="menu-main-villa__item">
-                                        <a href="" class="menu-main-villa__link">галерея</a>
+                                        <a href="" class="menu-main-villa__link link-scroll"
+                                            data-scroll="gallery">галерея</a>
                                     </li>
                                     <li class="menu-main-villa__item">
-                                        <a href="" class="menu-main-villa__link">контакты</a>
+                                        <a href="" class="menu-main-villa__link link-scroll"
+                                            data-scroll="contact">контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="villa__about about-villa" id="about">
+                <div class="about-villa__content">
+                    <div class="about-villa__container container">
+                        <div class="about-villa__row">
+                            <div class="about-villa__column about-villa__column_image">
+                                <h2 class="about-villa__title title-h2">про виллу</h2>
+                            </div>
+                            <div class="about-villa__column_content">
+                                <div class="about-villa__text">
+                                    <p>
+                                        Замечательная резиденция площадью 680 кв. м станет идеальным местом для
+                                        семейного отдыха с детьми или в веселой компании друзей. Здание занимает 3
+                                        уровня, интерьеры прекрасно меблированы и декорированы.
+                                    </p>
+                                    <p>
+                                        Одна из изюминок виллы – большой 15-метровый бассейн с мелководной зоной для
+                                        детей. Рядом с бассейном в традиционной беседке оборудован лаунж с мягкой
+                                        мебелью и кофейным столиком. Снаружи также обустроены зоны для принятия
+                                        солнечных ванн с шезлонгами и зонтиками.
+                                    </p>
+                                </div>
+                                <div class="about-villa__info info-about-villa">
+                                    <div class="info-about-villa__column">
+                                        <div class="info-about-villa__label">680 м²</div>
+                                        <div class="info-about-villa__value">площадь територии</div>
+                                    </div>
+                                    <div class="info-about-villa__column">
+                                        <div class="info-about-villa__label">10+</div>
+                                        <div class="info-about-villa__value">вместительность</div>
+                                    </div>
+                                    <div class="info-about-villa__column">
+                                        <div class="info-about-villa__label">5</div>
+                                        <div class="info-about-villa__value">к-во спален</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-villa__image-block" data-da="about-villa__column_image, 1, 992">
+                    <div class="about-villa__image ibg">
+                        <img src="img/about/01.jpg" alt="about-img">
+                    </div>
+                </div>
+            </section>
+            <section class="villa__layout layout-villa" id="layout">
+                <div class="layout-villa__top top-layout-villa">
+                    <div class="top-layout-villa__container container">
+                        <div class="top-layout-villa__body">
+                            <h2 class="top-layout-villa__title title-h2">
+                                планировка
+                            </h2>
+                            <div class="top-layout-villa__filter filter-top-layout-villa">
+                                <div class="filter-top-layout-villa__column">
+                                    <button class="filter-top-layout-villa__tab active" data-layout="1">Первый
+                                        уровень</button>
+                                </div>
+                                <div class="filter-top-layout-villa__column">
+                                    <button class="filter-top-layout-villa__tab" data-layout="2">второй уровень</button>
+                                </div>
+                                <div class="filter-top-layout-villa__column">
+                                    <button class="filter-top-layout-villa__tab" data-layout="3">третий уровень</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-villa__content">
+                    <div class="layout-villa__container container">
+                        <div class="layout-villa__body">
+                            <div class="layout-villa__item item-layout-villa layout-villa__item_1 active"
+                                data-layout="1">
+                                <div class="item-layout-villa__info info-item-layout-villa">
+                                    <ul class="info-item-layout-villa__list">
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостиная с мягкой зоной и ТВ;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            2 спальни с терассами, внутренними душевыим комнатами и гардеробными;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            В спальнях: двуспальные кровати king-sizе / или отдельные кровати,
+                                            письменные столы, кондиционеры, TV;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Полностью оборудованная кухня (микроволновка, кофеварка, духовка);
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая терраса - столовая с обеденным столом на 12 человек и лаунж-зоной;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Приватный бассейн 15 метров;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая беседка с мягкой мебелью;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Зона отдыха с шезлонгами у бассейна;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостевой санузел
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-layout-villa__slider slider-item-layout-villa">
+                                    <div
+                                        class="slider-item-layout-villa__swiper slider-item-layout-villa__swiper_1 swiper">
+                                        <div class="slider-item-layout-villa__wrapper swiper-wrapper">
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item-layout-villa__navigation-block">
+                                        <div class="slider-item-layout-villa__navigation navigation">
+                                            <div class="navigation__pagination slider-item-layout-villa-1__pagination">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_prev slider-item-layout-villa-1__btn_prev">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_next slider-item-layout-villa-1__btn_next">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout-villa__item item-layout-villa layout-villa__item_2" data-layout="2">
+                                <div class="item-layout-villa__info info-item-layout-villa">
+                                    <ul class="info-item-layout-villa__list">
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостиная с мягкой зоной и ТВ;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            2 спальни с терассами, внутренними душевыим комнатами и гардеробными;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            В спальнях: двуспальные кровати king-sizе / или отдельные кровати,
+                                            письменные столы, кондиционеры, TV;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Полностью оборудованная кухня (микроволновка, кофеварка, духовка);
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая терраса - столовая с обеденным столом на 12 человек и лаунж-зоной;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Приватный бассейн 15 метров;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая беседка с мягкой мебелью;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Зона отдыха с шезлонгами у бассейна;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостевой санузел
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-layout-villa__slider slider-item-layout-villa">
+                                    <div
+                                        class="slider-item-layout-villa__swiper slider-item-layout-villa__swiper_2 swiper">
+                                        <div class="slider-item-layout-villa__wrapper swiper-wrapper">
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item-layout-villa__navigation-block">
+                                        <div class="slider-item-layout-villa__navigation navigation">
+                                            <div class="navigation__pagination slider-item-layout-villa-2__pagination">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_prev slider-item-layout-villa-2__btn_prev">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_next slider-item-layout-villa-2__btn_next">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout-villa__item item-layout-villa layout-villa__item_3" data-layout="3">
+                                <div class="item-layout-villa__info info-item-layout-villa">
+                                    <ul class="info-item-layout-villa__list">
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостиная с мягкой зоной и ТВ;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            2 спальни с терассами, внутренними душевыим комнатами и гардеробными;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            В спальнях: двуспальные кровати king-sizе / или отдельные кровати,
+                                            письменные столы, кондиционеры, TV;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Полностью оборудованная кухня (микроволновка, кофеварка, духовка);
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая терраса - столовая с обеденным столом на 12 человек и лаунж-зоной;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Приватный бассейн 15 метров;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Крытая беседка с мягкой мебелью;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Зона отдыха с шезлонгами у бассейна;
+                                        </li>
+                                        <li class="info-item-layout-villa__list-item">
+                                            Гостевой санузел
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-layout-villa__slider slider-item-layout-villa">
+                                    <div
+                                        class="slider-item-layout-villa__swiper slider-item-layout-villa__swiper_3 swiper">
+                                        <div class="slider-item-layout-villa__wrapper swiper-wrapper">
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="slider-item-layout-villa__slide slide-slider-item-layout-villa swiper-slide">
+                                                <div class="slide-slider-item-layout-villa__item">
+                                                    <div class="slide-slider-item-layout-villa__image ibg">
+                                                        <img src="img/layout/01.jpg" alt="villa-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item-layout-villa__navigation-block">
+                                        <div class="slider-item-layout-villa__navigation navigation">
+                                            <div class="navigation__pagination slider-item-layout-villa-3__pagination">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_prev slider-item-layout-villa-3__btn_prev">
+                                            </div>
+                                            <div
+                                                class="navigation__btn navigation__btn_next slider-item-layout-villa-3__btn_next">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="villa__price price-villa" id="price">
+                <div class="price-villa__container container">
+                    <div class="price-villa__top top-price-villa">
+                        <h2 class="top-price-villa__title title-h2">
+                            СУТОЧНАЯ СТОИМОСТЬ
+                        </h2>
+                        <a href="" class="top-price-villa__btn btn">
+                            Забронировать виллу
+                        </a>
+                    </div>
+                    <div class="price-villa__body">
+                        <div class="price-villa__table table-price-villa">
+                            <div class="table-price-villa__row">
+                                <div class="table-price-villa__column table-price-villa__column_season">
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            Сезон
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__label">
+                                                    Низкий Сезон
+                                                </div>
+                                                <div class="item-table-price-villa__value">
+                                                    <span>01 Мая – 30 Июня</span>
+                                                    <span>01 Сентября – 14 Декабря</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__label">
+                                                    Высокий Сезон
+                                                </div>
+                                                <div class="item-table-price-villa__value">
+                                                    <span>11 Января – 30 Апреля</span>
+                                                    <span>01 Июля – 30 Сентября</span>
+                                                    <span>15 Декабря - 21 Декабря</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__label">
+                                                    Пиковый Сезон
+                                                </div>
+                                                <div class="item-table-price-villa__value">
+                                                    <span>22 Декабря – 10 Января</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-price-villa__column table-price-villa__column_info">
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            5 спален
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $650
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $930
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $1850
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            4 спалени
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $600
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $855
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $1850
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            3 спалени
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $550
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $795
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    $1850
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            Мин. срок аренды
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    2 дня
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    2 дня
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    5 дней
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-price-villa__column-item">
+                                        <div class="table-price-villa__head">
+                                            Месячная стоимость
+                                        </div>
+                                        <div class="table-price-villa__body">
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    Под запрос
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    Под запрос
+                                                </div>
+                                            </div>
+                                            <div class="table-price-villa__item item-table-price-villa">
+                                                <div class="item-table-price-villa__value">
+                                                    Под запрос
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-price-villa__bottom bottom-table-price-villa">
+                                <div class="bottom-table-price-villa__column">
+                                    <div class="bottom-table-price-villa__item">
+                                        <div class="bottom-table-price-villa__label">Время заезда</div>
+                                        <div class="bottom-table-price-villa__value">15:00</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-table-price-villa__column">
+                                    <div class="bottom-table-price-villa__item">
+                                        <div class="bottom-table-price-villa__label">Время выезда</div>
+                                        <div class="bottom-table-price-villa__value">11:00</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-table-price-villa__column">
+                                    <div class="bottom-table-price-villa__item">
+                                        <div class="bottom-table-price-villa__label">Налоги и сборы</div>
+                                        <div class="bottom-table-price-villa__value">
+                                            Цены включают все налоги и сборы
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-table-price-villa__column">
+                                    <div class="bottom-table-price-villa__item">
+                                        <div class="bottom-table-price-villa__label">Акции</div>
+                                        <div class="bottom-table-price-villa__value">
+                                            При аренде свыше 20 дней действует скидка
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="villa__gallery gallery-villa" id="gallery">
+                <div class="gallery-villa__container container">
+                    <div class="gallery-villa__body">
+                        <h2 class="gallery-villa__title title-h2">
+                            Галерея
+                        </h2>
+                        <div class="gallery-villa__content">
+                            <div class="gallery-villa__item item-gallery-villa">
+                                <div class="item-gallery-villa__column item-gallery-villa__column_small">
+                                    <div class="item-gallery-villa__image-block">
+                                        <div class="item-gallery-villa__image ibg">
+                                            <img src="img/villa-img/03.jpg" alt="villa-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-gallery-villa__column item-gallery-villa__column_medium">
+                                    <div class="item-gallery-villa__column-text">
+                                        <div class="item-gallery-villa__text">
+                                            <p>
+                                                Основной уровень включает в себя современную полностью оборудованную
+                                                кухню с
+                                                баром для завтрака. Рядом расположена большая гостиная со стильными
+                                                серыми
+                                                софами, кофейным столиком и плазменным телевизором с Apple TV. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item-gallery-villa__column-image">
+                                        <div class="item-gallery-villa__image-block">
+                                            <div class="item-gallery-villa__image ibg">
+                                                <img src="img/villa-img/04.jpg" alt="villa-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-gallery-villa__column-text-big">
+                                        <div class="item-gallery-villa__text">
+                                            <p>
+                                                Стеклянные двери выходят на террасу у бассейна, окруженную ухоженным
+                                                зеленым
+                                                газоном. Здесь установлен обеденный стол из тикового дерева на 10 гостей
+                                                –
+                                                превосходное место для завтрака или барбекю-вечеринки. Одна из изюминок
+                                                виллы – большой 15-метровый бассейн с мелководной зоной для детей. Рядом
+                                                с
+                                                бассейном в традиционной беседке оборудован лаунж с мягкой мебелью и
+                                                кофейным столиком. Снаружи также обустроены зоны для принятия солнечных
+                                                ванн
+                                                с шезлонгами и зонтиками.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-villa__item item-gallery-villa">
+                                <div class="item-gallery-villa__column item-gallery-villa__column_big">
+                                    <div class="item-gallery-villa__column-image">
+                                        <div class="item-gallery-villa__image-block">
+                                            <div class="item-gallery-villa__image ibg">
+                                                <img src="img/villa-img/01.jpg" alt="villa-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-villa__item item-gallery-villa">
+                                <div class="item-gallery-villa__column item-gallery-villa__column_medium">
+                                    <div class="item-gallery-villa__column-image">
+                                        <div class="item-gallery-villa__image-block">
+                                            <div class="item-gallery-villa__image ibg">
+                                                <img src="img/villa-img/05.jpg" alt="villa-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-gallery-villa__column-text">
+                                        <div class="item-gallery-villa__text">
+                                            <p>
+                                                Каждый из 5 сьютов со вкусом декорирован в современном тропическом
+                                                стиле. Каждая из просторных спален (40-50 кв. м) кондиционируется,
+                                                оснащена плазменным телевизором и сейфом, а также имеет прилегающую
+                                                ванную комнату.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item-gallery-villa__column-text-big">
+                                        <div class="item-gallery-villa__text">
+                                            <p>
+                                                Все двуспальные кровати могут быть разделены на 2 односпальные, а софы
+                                                могут использоваться в качестве дополнительных кроватей. Гостям
+                                                предоставляется высококачественное постельное белье. Ванные комнаты
+                                                оборудованы душевыми кабинами с тропическим душем, а в главной спальне
+                                                имеется огромная ванна. 2 спальни находятся на основном уровне, их
+                                                раздвижные стеклянные двери выходят прямо на террасу у бассейна. Еще 3
+                                                спальни, включая главную, занимают верхний уровень и имеют доступ к
+                                                меблированным балконам с видом на море.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-gallery-villa__column item-gallery-villa__column_small">
+                                    <div class="item-gallery-villa__image-block">
+                                        <div class="item-gallery-villa__image ibg">
+                                            <img src="img/villa-img/06.jpg" alt="villa-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-villa__item item-gallery-villa">
+                                <div
+                                    class="item-gallery-villa__column item-gallery-villa__column_medium item-gallery-villa__column_medium-big">
+                                    <div class="item-gallery-villa__column-image">
+                                        <div class="item-gallery-villa__image-block">
+                                            <div class="item-gallery-villa__image ibg">
+                                                <img src="img/villa-img/07.jpg" alt="villa-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item-gallery-villa__column item-gallery-villa__column_small item-gallery-villa__column_small-text">
+                                    <div class="item-gallery-villa__column-text">
+                                        <div class="item-gallery-villa__text">
+                                            <p>
+                                                На просторной крытой террасе верхнего уровня оборудованы
+                                                ультрасовременный домашний кинотеатр с мягкими удобными софами и уютный
+                                                лаунж с видом на море.
+                                            </p>
+                                            <p>
+                                                Для поклонников йоги менеджер комплекса может организовать уроки йоги с
+                                                профессиональным преподавателем-гуру.
+                                            </p>
+                                            <p>
+                                                Вы также можете побаловать себя, воспользовавшись услугами
+                                                квалифицированного массажиста, владеющего приемами традиционного и
+                                                современного тайского массажа.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item-gallery-villa__column-btn">
+                                        <a href="" class="item-gallery-villa__btn btn">
+                                            Все фото
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-villa__all-photo all-photo">
+                    <div class="all-photo__container container">
+                        <div class="all-photo__body">
+                            <button class="all-photo__btn all-photo__btn_prev"></button>
+                            <div class="all-photo__slider slider-all-photo">
+                                <a href="" class="slider-all-photo__close"></a>
+                                <div class="slider-all-photo__swiper slider-all-photo__swiper_1 swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/01.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/02.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/03.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/04.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/05.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/06.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/07.jpg" alt="villa-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-all-photo__swiper slider-all-photo__swiper_2 swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/01.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/02.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/03.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/04.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/05.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/06.jpg" alt="villa-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/villa-img/07.jpg" alt="villa-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="all-photo__btn all-photo__btn_next"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="villa__contacts contacts-villa" id="contact">
+                <div class="contacts-villa__image ibg">
+                    <img src="img/contacts/bg.jpg" alt="bg">
+                </div>
+                <div class="contacts-villa__container container">
+                    <div class="contacts-villa__row">
+                        <div class="contacts-villa__column">
+                            <h2 class="contacts-villa__title title-h2">
+                                Контакты
+                            </h2>
+                            <div class="contacts-villa__items">
+                                <div class="contacts-villa__item contacts-villa__item_phone">
+                                    <a href="tel:+66952808000" class="contacts-villa_link">+6 695 280 80 00</a>
+                                </div>
+                                <div class="contacts-villa__item contacts-villa__item_email">
+                                    <a href="mailto:info@bantaiestatevillas.com" class="contacts-villa_link">
+                                        info@bantaiestatevillas.com
+                                    </a>
+                                </div>
+                                <div class="contacts-villa__item contacts-villa__item_address">
+                                    <span class="contacts-villa_link">
+                                        Ban Tai Estate<br>
+                                        32/20 Moo 5, Maenam, Koh Samui, 84330
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-villa__column contacts-villa__column_form">
+                            <form action="#" class="contacts-villa__form form">
+                                <div class="form__top">
+                                    <div class="form__title">Онлайн-бронировнаие</div>
+                                </div>
+                                <div class="form__body">
+                                    <div class="form__item">
+                                        <div class="form__dropdown dropdown">
+                                            <button class="dropdown__btn">
+                                                1 спальня
+                                            </button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-dropdown="1 спальня">1 спальня</li>
+                                                <li class="dropdown__list-item" data-dropdown="2 спальни">2 спальни</li>
+                                                <li class="dropdown__list-item" data-dropdown="3 спальни">3 спальни</li>
+                                            </ul>
+                                            <input type='text' name='form[]' value='1 спальня'
+                                                class='dropdown__input-hidden'>
+                                        </div>
+                                    </div>
+                                    <div class="form__item form__item_date form__item_date-arrival">
+                                        <input autocomplete='off' type='date' name='form[]'
+                                            class='form__input form__input_date'>
+                                    </div>
+                                    <div class="form__item form__item_date form__item_date-departure">
+                                        <input autocomplete='off' type='date' name='form[]'
+                                            class='form__input form__input_date'>
+                                    </div>
+                                    <button type='submit' class='form__btn btn'>Проверить наличие</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contacts-villa__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.1537318131445!2d99.96502377456211!3d9.582013880088404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054f9dfcc78e7c3%3A0xfde48ea0dcc35c47!2sBan%20Tai%20Estate!5e0!3m2!1sru!2sua!4v1716277977903!5m2!1sru!2sua"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
         </main>
-        
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__logo logo">
+                villa bacardi
+            </div>
+            <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                    <li class="menu-footer__item">
+                        <a href="" class="menu-footer__link link-scroll" data-scroll="about">Описание</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="" class="menu-footer__link link-scroll" data-scroll="layout">Планировка</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="" class="menu-footer__link link-scroll" data-scroll="price">Стоимость</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="" class="menu-footer__link link-scroll" data-scroll="gallery">Галерея</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="" class="menu-footer__link link-scroll" data-scroll="contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__language language">
+                <div class="language__items">
+                    <a href="" class="language__item active">RU</a>
+                    <a href="" class="language__item">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

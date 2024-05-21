@@ -470,6 +470,7 @@ body.lock {
   content: "Дата выезда";
 }
 .form__input {
+  flex: 1 1 100%;
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -2693,4 +2694,18 @@ body.lock {
   .contacts-villa__map {
     height: 240px;
   }
+}
+
+.flatpickr-day.selected {
+  background: #0D6B0D;
+  border-color: #0D6B0D;
+}
+.flatpickr-day.selected:hover {
+  background: #0D6B0D;
+  border-color: #0D6B0D;
+}
+
+.flatpickr-calendar {
+  width: 100%;
+  max-width: 320px;
 }
